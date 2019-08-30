@@ -1,0 +1,85 @@
+/* h1 */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body { display: grid; }
+header { grid-area: areaCabecalho; }
+button { grid-area: botao; }
+h1 { grid-area: tituloh1; }
+h2 { grid-area: tituloh2; }
+nav { grid-area: navegacao; }
+p { grid-area: paragrafoMenu; }
+div.titulo { grid-area: tituloMenu; }
+.conteudoPrincipal { grid-area: conteudoPagina; }
+
+@media (max-width: 600px){
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 75vh 600px;
+        grid-template-areas: 'areaCabecalho' 'conteudoPagina'; 
+        grid-gap: 10px;
+    }
+    nav.menuPrincipal {
+        display: none;
+    }
+    button.botaoFechar {
+        display: none;
+    }
+    header.cabecalho {
+        display: grid;
+        max-height: 80vh;
+        width: 100%;
+        background-image: url("../imagens/menuPrincipal.jpg");
+        background-size: 100% 100%; /* 1° largura - 2° altura */
+        background-repeat: no-repeat;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 1fr;
+        grid-template-areas: 'botao' ' tituloMenu'
+    }
+    div.tituloMenu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr;
+        grid-template-areas: 'tituloh1' 'paragrafoMenu';
+    }
+    h1 {
+        font-family: 'Great Vibes', cursive;
+        color: #ffffff;
+        font-size: 3.5em;
+        text-align: center;
+        
+    }
+    p.paragrafoMenu {
+        color: #928d8d;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+    .cabecalho span {
+        color: #ffffff;
+    }
+    .botaoExibir {
+        margin: 5% 0 0 80%;
+        width: 15%;
+        height: 30%;
+        background-image: url('../imagens/toggle.jpg');
+        background-repeat: no-repeat;
+        border: 1px #d10303 solid;
+        border-radius: 12px;
+        background-size: 100% 100%;
+    }
+
+    main.conteudoPrincipal {
+        display: grid;
+        min-width: 100%; 
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75vh 60vh 90vh 50vh; 
+    }
+}
