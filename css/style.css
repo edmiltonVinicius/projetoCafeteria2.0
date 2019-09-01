@@ -1,12 +1,13 @@
-/* h1 */
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body { display: grid; }
 header { grid-area: areaCabecalho; }
 button { grid-area: botao; }
@@ -16,13 +17,16 @@ nav { grid-area: navegacao; }
 p { grid-area: paragrafoMenu; }
 div.titulo { grid-area: tituloMenu; }
 .conteudoPrincipal { grid-area: conteudoPagina; }
+article.artigoMensagem { grid-area: artigoMensag }
+header.cabecalhoMensagem { grid-area: artMensagemCabecalho }
+p.textoMensagem { grid-area: artMensagemTexto }
+footer.rodapeMensagem { grid-area: artMensagemRodape }
 
-@media (max-width: 600px){
+@media (max-width: 380px){
     body {
         grid-template-columns: 1fr;
         grid-template-rows: 75vh 600px;
         grid-template-areas: 'areaCabecalho' 'conteudoPagina'; 
-        grid-gap: 10px;
     }
     nav.menuPrincipal {
         display: none;
@@ -75,11 +79,42 @@ div.titulo { grid-area: tituloMenu; }
         background-size: 100% 100%;
     }
 
-    main.conteudoPrincipal {
+    main#conteudoPrincipal {
         display: grid;
-        min-width: 100%; 
+        width: 100%; 
         min-height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 75vh 60vh 90vh 50vh; 
+        grid-template-rows: 70vh 90vh 50vh;
+        grid-template-areas: 'artigoMensag' '.' '.';
+    }
+
+    article.artigoMensagem {
+        width: 100%;
+        max-height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr 40%;
+        grid-template-areas: 'artMensagemCabecalho' 'artMensagemTexto' 'artMensagemRodape';
+        border-bottom: #d10303 1px solid;
+        grid-gap: 5%;
+    }
+    .cabecalhoMensagem {
+        font-family: 'Great Vibes', cursive;
+        font-size: 1.8em;
+        color: #e01e1e;
+        text-align: center;
+        padding-top: 10%;
+    }
+    
+    .textoMensagem {
+        width: 80%;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        margin: auto;
+    }
+    .rodapeMensagem{
+        font-family: 'Dancing Script', cursive;
+        width: 100%;
+        text-align: center;
     }
 }
