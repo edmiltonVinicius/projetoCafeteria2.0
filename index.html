@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cafeteria do Paulo</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 <body>
     <header class="cabecalho">
-        <div class="titulo">
+        
+        <button class="botaoExibir" onclick="exibirMenu()">Menu</button>
+        <hgroup class="titulos">
             <h1>Cafeteria do Paulo</h1>
-            <p class="paragrafoMenu">Sua <span>Cafeteria</span> favorita</p>
-        </div>
-        <nav class="menuPrincipal">
+            <h2>Sua <span>Cafeteria</span> favorita</h2>
+        </hgroup>
+        <nav class="menuPrincipal" id="idMenuPrincipal">
+            <button class="botaoFechar" onclick="esconderMenu()">X</button>
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="sobreNos.html">SOBRE NÓS</a></li>
@@ -21,10 +27,9 @@
                 <li><a href="contato.html">CONTATO</a></li>
             </ul>
         </nav>
-        <button class="botaoFechar">X</button>
-        <button class="botaoExibir"></button>
     </header>
-    <main id="conteudoPrincipal">
+
+    <main class="conteudoPrincipal">
 
         <article class="artigoMensagem">
             <header class="cabecalhoMensagem">
