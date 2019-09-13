@@ -9,19 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 </head>
 <body>
     <header class="cabecalho">
-        <div class="titulo">
-            <a href="index.html"><h1>Cafeteria do Paulo</h1></a>
-            <p class="paragrafoMenu">Sua <span>Cafeteria</span> favorita</p>
-        </div>
-        <button class="botaoExibir"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
-        <nav class="menuPrincipal">
-            <button class="botaoFechar"><i class="fa fa-times fa-2x"></i></button>
+        <button class="botaoExibir" onclick="exibirMenu()">Menu</button>
+        <hgroup class="titulos">
+            <h1>Cafeteria do Paulo</h1>
+            <h2>Sua <span>Cafeteria</span> favorita</h2>
+        </hgroup>
+        <nav class="menuPrincipal" id="idMenuPrincipal">
+            <button class="botaoFechar" onclick="esconderMenu()">X</button>
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="sobreNos.html">SOBRE NÓS</a></li>
@@ -30,7 +30,8 @@
             </ul>
         </nav>
     </header>
-    <main id="conteudoPrincipal">
+
+    <main class="conteudoPrincipal">
 
         <article class="artigoMensagem">
             <header class="cabecalhoMensagem">
