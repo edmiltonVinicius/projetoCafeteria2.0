@@ -6,20 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cafeteria do Paulo</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="sliderAutomatico1()">
     <header class="cabecalho"> 
         <button class="botaoExibir" onclick="exibirMenu()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
 
         <hgroup class="titulos">
             <h1>Cafeteria do Paulo</h1>
-            <h2>Sua <span>Cafeteria</span> favorita</h2>
+            <h2>Sua Cafeteria favorita</h2>
         </hgroup>
         <nav class="menuPrincipal" id="idMenuPrincipal">
             <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg" aria-hidden="true"></i></button>
@@ -38,7 +37,7 @@
             <header class="cabecalhoMensagem">
                 <h2>Café com Paixão</h2>
             </header>
-            <figure>
+            <figure class="imagensLaterais">
                 <img class="imgPao" src="imagens/pao.jpg" alt="Imagem Pão"/>
                 <img class="imgGraosCafe" src="imagens/graosCafe.jpg" alt="Imagem Grãos de Café"/>
             </figure>
@@ -54,8 +53,8 @@
         </article>
 
         <article class="tabela">
+            <h2>È hora do Café...</h2>
             <table class="tabelaPrecos">
-                <caption><h2>È hora do Café...</h2></caption>
                 <tbody>
                     <tr><td class="le">Espresso</td> <td class="ld">R$ 5,00</td></tr>
                     <tr><td class="le">Café com Leite</td> <td class="ld">R$ 9,00</td></tr>
@@ -63,14 +62,20 @@
                     <tr><td class="le">Brigadeiro de Colher</td> <td class="ld">R$ 10,00</td></tr>
                 </tbody>
             </table>
-            <button class="btnCardapio"><a href="nossoCardapio.html">CARDÁPIO</a></button>
+            <a class="btnCardapio" href="nossoCardapio.html">Cardápio</a>
         </article>
 
-        <article class="slide" onload="sliderAutomatico1()">
+        <article class="slide">
             <h2>Comece seu dia conosco</h2>
             <p class="textSubtitulo">E volte á tarde :) nossos funcionários vão fazer você se sentir em casa.</p>
-            
+            <div class="sliderImagens">
+                <img id="imagens" src="imagens/carrosel01.jpg" alt="Imagens Cafeteria do Paulo">
+            </div>
+            <button onclick="voltarSlider()" class="btn btnMenos" id="btnMenos"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button onclick="avancarSlider()" class="btn btnMais"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </article>
     </main>
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
 </body>
 </html>

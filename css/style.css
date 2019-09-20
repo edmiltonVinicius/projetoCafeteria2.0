@@ -73,7 +73,7 @@ nav.menuPrincipal {
     text-decoration: none;
     padding: 10% 25%;
 }
-a:hover {
+.menuPrincipal a:hover {
     background-color: #0f4e50;
 }
 
@@ -82,62 +82,128 @@ main.conteudoPrincipal {
     width: 100%;
     min-height: 100%;
 }
-figure {
-    display: none;
-}
+/* Artigo Mensagem */
 article.mensagem {
     width: 100%;
-    min-height: 350px;
-    max-height: 520px;
+    min-height: 450px;
+    max-height: 860px;
     text-align: center;
+}
+.imagensLaterais {
+    display: none;
 }
 .cabecalhoMensagem {
     width: 100%;
-    height: 20%;
+    height: 90px;
     padding-top: 5%;
     font-family: 'Great Vibes', 'Arial',cursive;
-    color: #e22828;
-    font-size: 1.5em;
+    color: #c54141;
+    font-size: 1.6em;
 }
 .textoMensagem {
     width: 80%;
-    height: 50%;
-    padding-top: 2%;
+    min-height: 200px;
+    max-height: 400px;
     margin: auto;
-    color: #2e2d2d;
+    color: #626060;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
 }
 .rodapeMensagem {
     width: 95%;
-    height: 30%;
+    height: 160px;
     margin: auto;
     font-family: 'Dancing Script', cursive;
     font-weight: bolder;
-    color: #858282;
+    color: #645757;
     padding-top: 5%;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
-
+/*Artigo Tabela */
 article.tabela {
     width: 100%;
-    height: 450px;
+    height: 470px;
     background-image: url('../imagens/tabelaPrecos.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .tabelaPrecos {
-    width: 80%;
-    height: 75%;
-    margin: auto;
+    width: 60%;
+    height: 70%;
     color: #ffffff;
+    font-size: 1.3em;
 }
-.tabelaPrecos h2 {
+.tabela h2 {
     font-family: 'Great Vibes', 'Arial',cursive;
-    color: #e22828;
+    color: #202020;
+    font-size: 2.0em;
     padding-top: 5%;
+    text-align: center;
+}
+.btnCardapio {
+    width: 80%;
+    height: 40px;
+    margin-left: 15%;
+    margin-top: 30px;
+    border: 2px solid #dbd6d6;
+    color: #ffffff;
+    text-align: center;
+    padding: 4% 25%;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+}
+.btnCardapio:hover {
+    border: 3px solid #444040;
+    color: #444040;
+    font-size: 1.3em;
 }
 
+/* Artigo Silde */
 article.slide {
     width: 100%;
-    height:  450px;   
+    max-height: 750px;   
+    text-align: center;
+}
+.slide h2 {
+    padding-top: 7%;
+    font-family: 'Great Vibes', 'Arial',cursive;
+    color: #c54141;
+    font-size: 2.3em;
+}
+.slide p {
+    color: #4b4646;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 3%;
+}
+.sliderImagens {
+    width: 100%;
+    max-height: 750px;
+    margin-top: 5%;
+}
+.sliderImagens img {
+    width: 95%;
+    height: 427px;
+    border: 1px #0f4e50 solid;
+    border-radius: 10px;
+}
+/* ajustar os botões nas medias queries pois no mobile eles serao none 
+
+.btn {
+    position: absolute;
+    top: 270%;
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+}
+.btnMenos {
+    left: 5%;
+}
+.btnMais {
+    right: 5%;
+}
+*/
+.btn {
+    display: none;
 }
