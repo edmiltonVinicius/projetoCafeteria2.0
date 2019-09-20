@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cafeteria do Paulo</title>
-    <link rel="stylesheet" href="css/style2.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
     integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <button class="botaoExibir" onclick="exibirMenu()">Menu</button>
+    <header class="cabecalho"> 
+        <button class="botaoExibir" onclick="exibirMenu()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+
         <hgroup class="titulos">
             <h1>Cafeteria do Paulo</h1>
             <h2>Sua <span>Cafeteria</span> favorita</h2>
         </hgroup>
         <nav class="menuPrincipal" id="idMenuPrincipal">
-            <button class="botaoFechar" onclick="esconderMenu()">X</button>
+            <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg" aria-hidden="true"></i></button>
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="sobreNos.html">SOBRE NÓS</a></li>
@@ -33,10 +34,14 @@
 
     <main class="conteudoPrincipal">
 
-        <article class="artigoMensagem">
+        <article class="mensagem">
             <header class="cabecalhoMensagem">
-                <h2 class="tituloMensagem">Café com Paixão</h2>
+                <h2>Café com Paixão</h2>
             </header>
+            <figure>
+                <img class="imgPao" src="imagens/pao.jpg" alt="Imagem Pão"/>
+                <img class="imgGraosCafe" src="imagens/graosCafe.jpg" alt="Imagem Grãos de Café"/>
+            </figure>
             <p class="textoMensagem">
                 Começamos essa cafeteria com uma visão clara - compartilhar nosso amor verdadeiro por café. 
                 Nossos fundadores não veem esta obra como uma fonte de recursos financeiros, antes uma oportunidade diaria de fazer
@@ -48,6 +53,26 @@
             </footer>
         </article>
 
+        <article class="tabela">
+            <table class="tabelaPrecos">
+                <caption><h2>È hora do Café...</h2></caption>
+                <tbody>
+                    <tr><td class="le">Espresso</td> <td class="ld">R$ 5,00</td></tr>
+                    <tr><td class="le">Café com Leite</td> <td class="ld">R$ 9,00</td></tr>
+                    <tr><td class="le">Cappuccino</td> <td class="ld">R$ 9,00</td></tr>
+                    <tr><td class="le">Brigadeiro de Colher</td> <td class="ld">R$ 10,00</td></tr>
+                </tbody>
+            </table>
+            <button class="btnCardapio"><a href="nossoCardapio.html">CARDÁPIO</a></button>
+        </article>
+
+        <article class="slide" onload="sliderAutomatico1()">
+            <h2>Comece seu dia conosco</h2>
+            <p class="textSubtitulo">E volte á tarde :) nossos funcionários vão fazer você se sentir em casa.</p>
+            <div class="imagensSlide">
+                <img id="imgagens" src="imagens/carrosel01.jpg" alt="Imagens do Slide">
+            </div>
+        </article>
     </main>
 </body>
 </html>
