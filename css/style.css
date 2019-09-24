@@ -11,7 +11,7 @@ body {
 /* Cabeçalho */
 header.cabecalho {
     width: 100%;
-    min-height: 450px;
+    min-height: 500px;
     max-height: 85vh;
     background-image: url("../imagens/menuPrincipal.jpg");
     background-size: 100% 100%; /* 1° largura - 2° altura */
@@ -50,6 +50,11 @@ header.cabecalho {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3em;
 }
+@keyframes menu{
+    from {width: 0;}
+    to {width: 100%;}
+}
+
 nav.menuPrincipal {
     display: none;
     width: 100%;
@@ -59,6 +64,7 @@ nav.menuPrincipal {
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Josefin Sans', sans-serif;
+    animation: menu 1s; 
 }
 .menuPrincipal ul {
     max-height: 100%;
@@ -123,26 +129,31 @@ article.mensagem {
 /*Artigo Tabela */
 article.tabela {
     width: 100%;
-    height: 500px;
-    background-image: url('../imagens/tabelaPrecos2.jpg');
+    height: 550px;
+    background-image: url('../imagens/tabelaPrecos.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+div.gambi {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 .tabelaPrecos {
     width: 100%;
-    height: 350px;
+    height: 360px;
     color: #ffffff;
     font-size: 1.0em;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 7%;
-    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-bottom: 40px;
 }
 .tabela h2 {
     font-family: 'Great Vibes', 'Arial',cursive;
-    color: #c54141;
-    font-size: 2.1em;
-    padding-top: 5%;
+    font-size: 2.2em;
+    padding-top: 6%;
     text-align: center;
+    color: #ffffff;
 }
 .le {
     font-size: 1.2em;
@@ -153,32 +164,31 @@ article.tabela {
     font-size: 1.2em;
     padding-left: 2%;
     padding-top: 5%;
-    color: #444040;
 }
 .ldb {
     font-size: 0.8em;
     border-bottom: 0.5px solid #b3aeae;
 }
 .btnCardapio {
-    border: 2px solid #eee5e5f1;
-    color: #eee5e5f1;
+    border: 1px solid #eee5e5f1;
+    color: #ffffff;
     text-align: center;
-    padding: 4% 25%;
+    padding: 4% 28%;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2em;
     margin: 0 10% 0 10%;
 }
 .btnCardapio:hover {
-    border: 3px solid #444040;
-    color: #444040;
-    font-size: 1.3em;
+    border-color: #a59999;
+    color: #a59999;
 }
 
 /* Artigo Silde */
 article.slide {
     width: 100%;
-    max-height: 750px;   
+    min-height: 520px;
+    max-height: 780px;   
     text-align: center;
 }
 .slide h2 {
@@ -204,22 +214,63 @@ article.slide {
     border: 1px #0f4e50 solid;
     border-radius: 10px;
 }
-/* ajustar os botões nas medias queries pois no mobile eles serao none 
-
-.btn {
-    position: absolute;
-    top: 270%;
-    width: 40px;
-    height: 30px;
-    border-radius: 10px;
-}
-.btnMenos {
-    left: 5%;
-}
-.btnMais {
-    right: 5%;
-}
-*/
 .btn {
     display: none;
+}
+
+/* RODAPE */
+.rodape {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    text-align: center;
+    color: #cac0c0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url('../imagens/rodape.jpg');
+}
+.informacoes {
+    width: 100%;
+    height: 80%;
+    padding-top: 15%;
+    background-color: rgba(0, 0, 0, .6);
+}
+.informacoes h2 {
+    font-family: 'Great Vibes', 'Arial',cursive;
+    color: #c73002;
+    font-size: 2.5em;
+}
+.informacoes p {
+    padding-top: 20px;
+    font-size: 1.2em;
+}
+.informacoes span {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.informacoes h3 {
+    padding-top: 10%;
+    color: #ffffff;
+}
+.endereco {
+    padding-top: 10%;
+    color: #ffffff;
+    margin-bottom: 12%;
+}
+.contato {
+    padding: 5% 22%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.formalidade {
+    width: 100%;
+    height: 20%;
+    color: #adada9;
+    background-color: #181717;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+}
+.formalidade p {
+    margin-bottom: 5px;
 }
