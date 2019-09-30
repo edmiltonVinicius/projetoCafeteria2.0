@@ -8,7 +8,7 @@ body {
     min-height: 100%;
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
 header.cabecalho {
     width: 100%;
     min-height: 500px;
@@ -37,7 +37,7 @@ header.cabecalho {
 .titulos {
     width: 95%;
     height: 20%;
-    padding-top: 30vh;
+    padding-top: 200px;
     margin: auto;
 }
 .titulos h1 {
@@ -58,7 +58,8 @@ header.cabecalho {
 nav.menuPrincipal {
     display: none;
     width: 100%;
-    height: 100vh;
+    min-height: 100%;
+    max-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,31 +68,31 @@ nav.menuPrincipal {
     animation: menu 1s; 
 }
 .menuPrincipal ul {
-    max-height: 100%;
-    width: 100%;
-    margin: 80px auto 0 auto;
+    margin-top: 95px;
+    min-height: 400px;
 }
 .menuPrincipal li {
-    padding: 12%;
+    padding:35px;
 }
 .menuPrincipal a {
     color: #ffffff;
     text-decoration: none;
-    padding: 10% 25%;
+    padding: 30px 20px;
+    font-size: 1.3em;
 }
 .menuPrincipal a:hover {
     background-color: #0f4e50;
 }
 
-/* Containner */
+/* CONTAINNER */
 main.conteudoPrincipal {
     width: 100%;
     min-height: 100%;
 }
-/* Artigo Mensagem */
+/* ARTIGO MENSAGEM */
 article.mensagem {
     width: 100%;
-    min-height: 450px;
+    min-height: 350px;
     max-height: 860px;
     text-align: center;
 }
@@ -126,10 +127,10 @@ article.mensagem {
     font-size: 1.4em;
 }
 
-/*Artigo Tabela */
+/*ARTIGO TABELA */
 article.tabela {
     width: 100%;
-    height: 550px;
+    height: 580px;
     background-image: url('../imagens/tabelaPrecos.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -140,33 +141,32 @@ div.gambi {
     background-color: rgba(0, 0, 0, 0.4);
 }
 .tabelaPrecos {
-    width: 100%;
+    max-width: 100%;
     height: 360px;
     color: #ffffff;
     font-size: 1.0em;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 5%;
-    margin-bottom: 40px;
+    margin: 4% 0px 60px 6%;
+    font-size: 1.2em;
 }
 .tabela h2 {
     font-family: 'Great Vibes', 'Arial',cursive;
-    font-size: 2.2em;
+    font-size: 2.3em;
     padding-top: 6%;
     text-align: center;
     color: #ffffff;
 }
 .le {
-    font-size: 1.2em;
     width: 60%;
     padding-top: 4%;
 }
 .ld {
-    font-size: 1.2em;
     padding-left: 2%;
     padding-top: 5%;
 }
 .ldb {
     font-size: 0.8em;
+    margin-top: 5%;
     border-bottom: 0.5px solid #b3aeae;
 }
 .btnCardapio {
@@ -184,7 +184,7 @@ div.gambi {
     color: #a59999;
 }
 
-/* Artigo Silde */
+/* ARTIGO SLIDE */
 article.slide {
     width: 100%;
     min-height: 520px;
@@ -195,7 +195,7 @@ article.slide {
     padding-top: 7%;
     font-family: 'Great Vibes', 'Arial',cursive;
     color: #c54141;
-    font-size: 2.3em;
+    font-size: 2.4em;
 }
 .slide p {
     color: #4b4646;
@@ -205,13 +205,15 @@ article.slide {
 }
 .sliderImagens {
     width: 100%;
+    min-height: 450px;
     max-height: 750px;
     margin-top: 5%;
 }
+
 .sliderImagens img {
     width: 95%;
     height: 427px;
-    border: 1px #0f4e50 solid;
+    border: 1px #113536 solid;
     border-radius: 10px;
 }
 .btn {
@@ -221,16 +223,18 @@ article.slide {
 /* RODAPE */
 .rodape {
     width: 100%;
-    height: 500px;
+    height: 530px;
     background-color: black;
     text-align: center;
     color: #cac0c0;
     font-family: 'Josefin Sans', sans-serif;
     background-image: url('../imagens/rodape.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .informacoes {
     width: 100%;
-    height: 80%;
+    min-height: 80%;
     padding-top: 15%;
     background-color: rgba(0, 0, 0, .6);
 }
@@ -265,7 +269,8 @@ article.slide {
 }
 .formalidade {
     width: 100%;
-    height: 20%;
+    min-height: 20%;
+    max-height: 35%;
     color: #adada9;
     background-color: #181717;
     font-family: Arial, Helvetica, sans-serif;
@@ -273,4 +278,115 @@ article.slide {
 }
 .formalidade p {
     margin-bottom: 5px;
+}
+
+@media (min-width: 520px) and (max-width: 700px) {
+    /* CABEÇALHO */
+    .titulos h1 {
+        font-size: 3.4em;
+    }
+    .titulos h2 {
+        font-size: 1.4em;
+    }
+    .botaoFechar, .botaoExibir {
+        height: 70px;
+        width: 80px;
+        font-size: 1.8em;
+    }
+    /*MENU*/
+    .menuPrincipal ul {
+        margin-top: 120px;
+    }
+    .menuPrincipal li {
+        padding: 40px;
+    }
+    .menuPrincipal a {
+        padding: 30px 80px;
+    }
+    /* ARTIGO MENSAGEM */
+    .mensagem {
+        height: 400px;
+    }
+    .cabecalhoMensagem {
+        font-size: 1.9em;
+        height: 80px;
+    }
+    .textoMensagem {
+        padding-top: 20px;
+        font-size: 1.3em;
+        font-weight: normal;
+    }
+    .rodapeMensagem {
+        font-size: 1.6em;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* ARTIGO TABELA */
+    .tabela {
+        font-size: 1.1em;
+        min-height: 630px;
+        max-height: 710px;
+    }
+    .tabelaPrecos {
+        margin: 2% auto 10% auto;
+        width: 80%;
+    }
+    .tabela h2 {
+        font-size: 2.5em;
+    }
+    .le {
+        width: 78%;
+    }
+    .btnCardapio {
+        padding: 3% 23%;
+        margin: 0 12% 0 19%;
+        font-size: 1.3em;
+    }
+
+    /* ARTIGO SLIDE */
+    .slide {
+        height: 632px;
+    }
+    .slide h2 {
+        font-size: 2.9em;
+        padding-top: 5%;
+    }
+    .slide p {
+        margin-top: 1%;
+        font-size: 1.3em;
+    }
+    .sliderImagens img {
+        border: 2px #113536 solid;
+        border-radius: 10px;
+        box-shadow: 9px 9px #dadad4;
+    }
+
+    /* RODAPÉ */
+    .rodape {
+        height: 600px;  
+    }
+    .informacoes {
+        padding-top: 10%;
+    }
+    .informacoes h2 {
+        font-size: 2.9em;
+    }
+    .informacoes p {
+        font-size: 1.3em;
+    }
+    .informacoes h3 {
+        padding-top: 7%;
+    }
+    .endereco {
+        margin-bottom: 15%;
+    }
+    .contato {
+        padding: 4% 18%;
+        font-size: 1.5em;
+    }
+    .formalidade {
+        padding-top: 40px;
+        height: 20%;
+    }
 }
