@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cafeteria do Paulo</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
-    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/janelaNavegador.jpg" />
 </head>
+
 <body onload="sliderAutomatico1()">
-    <header class="cabecalho"> 
+    <header class="cabecalho">
         <button class="botaoExibir" onclick="exibirMenu()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
 
         <hgroup class="titulos">
@@ -21,7 +24,8 @@
             <h2>Sua Cafeteria favorita</h2>
         </hgroup>
         <nav class="menuPrincipal" id="idMenuPrincipal">
-            <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg" aria-hidden="true"></i></button>
+            <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg"
+                    aria-hidden="true"></i></button>
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="sobreNos.html">SOBRE NÓS</a></li>
@@ -38,13 +42,14 @@
                 <h2>Café com Paixão</h2>
             </header>
             <figure class="imagensLaterais">
-                <img class="imgPao" src="imagens/pao.jpg" alt="Imagem Pão"/>
-                <img class="imgGraosCafe" src="imagens/graosCafe.jpg" alt="Imagem Grãos de Café"/>
+                <img class="imgPao" src="imagens/pao.jpg" alt="Imagem Pão" />
+                <img class="imgGraosCafe" src="imagens/graosCafe.jpg" alt="Imagem Grãos de Café" />
             </figure>
             <p class="textoMensagem">
-                Começamos essa cafeteria com uma visão clara - compartilhar nosso amor verdadeiro por café. 
-                Nossos fundadores não veem esta obra como uma fonte de recursos financeiros, antes uma oportunidade diaria de fazer
-                aquilo que seu coração ama "servir, e servir com excelencia". 
+                Começamos essa cafeteria com uma visão clara - compartilhar nosso amor verdadeiro por café.
+                Nossos fundadores não veem esta obra como uma fonte de recursos financeiros, antes uma oportunidade
+                diaria de fazer
+                aquilo que seu coração ama "servir, e servir com excelencia".
                 Venha, sente-se a mesa e desfrute.
             </p>
             <footer>
@@ -58,25 +63,29 @@
                 <table class="tabelaPrecos">
                     <tbody>
                         <tr>
-                            <td class="le">Espresso</td> <td class="ld">R$ 5,00</td>
+                            <td class="le">Espresso</td>
+                            <td class="ld">R$ 5,00</td>
                         </tr>
                         <tr>
                             <td class="ldb">Porro quisquam est qui dolorem ipsum</td>
                         </tr>
                         <tr>
-                            <td class="le">Café com Leite</td> <td class="ld">R$ 9,00</td>
+                            <td class="le">Café com Leite</td>
+                            <td class="ld">R$ 9,00</td>
                         </tr>
                         <tr>
                             <td class="ldb">Et dolore magnam aliquam quaerat voluptatem</td>
                         </tr>
                         <tr>
-                            <td class="le">Cappuccino</td> <td class="ld">R$ 9,00</td>
+                            <td class="le">Cappuccino</td>
+                            <td class="ld">R$ 9,00</td>
                         </tr>
                         <tr>
                             <td class="ldb">Ex ea commodi consequatur quis autem</td>
                         </tr>
                         <tr>
-                            <td class="le">Café gelado</td> <td class="ld">R$ 9,00</td>
+                            <td class="le">Café gelado</td>
+                            <td class="ld">R$ 9,00</td>
                         </tr>
                         <tr>
                             <td class="ldb">Porro quisquam est qui dolorem ipsum</td>
@@ -84,7 +93,7 @@
                     </tbody>
                 </table>
                 <a class="btnCardapio" href="nossoCardapio.html">Cardápio</a>
-        </div>
+            </div>
         </article>
 
         <article class="slide">
@@ -93,28 +102,33 @@
             <div class="sliderImagens">
                 <img id="imagens" src="imagens/carrosel01.jpg" alt="Imagens Cafeteria do Paulo">
             </div>
-            <button onclick="voltarSlider()" class="btn btnMenos" id="btnMenos"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-            <button onclick="avancarSlider()" class="btn btnMais"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            <button onclick="voltarSlider()" class="btn btnMenos" id="btnMenos"><i class="fa fa-chevron-left"
+                    aria-hidden="true"></i></button>
+            <button onclick="avancarSlider()" class="btn btnMais"><i class="fa fa-chevron-right"
+                    aria-hidden="true"></i></button>
         </article>
-        
+
     </main>
     <footer class="rodape">
-        <div class="informacoes">
-            <h2>Esperamos sua visita</h2>
-            <p>
-                Segunda-feira - Sábado: <span>8h</span> - <span>18h</span>
-                Domingo: <span>8h</span> - <span>22h</span>
-            </p>
-            <h3>Cafeteria do Paulo</h3>
-            <p class="endereco">Avenida Pasteur 520, Rio de Janeiro 04719-001</p>
-            <a href="contato.html" class="contato">Entre em contato</a>
-        </div>
-        <div class="formalidade">
-            <p>Cafeteria do Paulo / Feita com amor 2019.</p>
-            <p>Desenvolvido por Edmilton Vincius Pansanato</p>
+        <div class="gambRodape">
+            <div class="informacoes">
+                <h2>Esperamos sua visita</h2>
+                <p>
+                    Segunda-feira - Sábado: <span>8h</span> - <span>18h</span>
+                    Domingo: <span>8h</span> - <span>22h</span>
+                </p>
+                <h3>Cafeteria do Paulo</h3>
+                <p class="endereco">Avenida Pasteur 520, Rio de Janeiro 04719-001</p>
+                <a href="contato.html" class="contato">Entre em contato</a>
+            </div>
+            <div class="formalidade">
+                <p>Cafeteria do Paulo / Feita com amor 2019.</p>
+                <p>Desenvolvido por Edmilton Vincius Pansanato</p>
+            </div>
         </div>
     </footer>
     <script src="js/script.js"></script>
     <script src="js/slide.js"></script>
 </body>
+
 </html>

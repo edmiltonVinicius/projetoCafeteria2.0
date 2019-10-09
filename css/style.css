@@ -233,11 +233,15 @@ article.slide {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+.gambRodape {
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
 .informacoes {
     width: 100%;
     min-height: 80%;
     padding-top: 15%;
-    background-color: rgba(0, 0, 0, .6);
 }
 .informacoes h2 {
     font-family: 'Great Vibes', 'Arial',cursive;
@@ -504,4 +508,52 @@ article.slide {
         margin-left: 34%;  
     }
     /* ARTIGO SLIDE */
+    .slide {
+        height: 640px;
+    }
+    .slide h2 {
+        padding-top: 3%;
+        font-size: 3.3em;
+    }
+    .slide p {
+        margin: 0;
+        font-size: 1.6em;
+    }
+    .sliderImagens {
+        width: 70%;
+        height: 570px;
+        margin: 1% auto;
+    }
+
+    /* RODAPÉ */
+    .informacoes {
+        width: 70%;
+        height: 90%;
+        padding-top: 3%;
+        margin: auto;
+    }
+    .informacoes h2 {
+        font-size: 3.0em;
+    }
+    .informacoes p {
+        font-size: 1.4em;
+    }
+    .informacoes h3 {
+        padding-top: 8%;
+        font-size: 1.4em;
+    }
+    .endereco {
+        margin-bottom: 9%;
+    }
+    .contato {
+        padding: 3% 16%;
+        font-size: 1.4em;
+    }
+    .formalidade {
+        font-size: 1.1em;
+        height: 10%;
+    }
+    .formalidade p {
+        margin-bottom: 10px;
+    }
 }
