@@ -49,12 +49,14 @@ header.cabecalho {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3em;
 }
-.titulos h1 {
+.titulos h1 a {
     position: absolute;
     top: 10%;
     left: 2%;
     color: #ffffff;
+    text-decoration: none;
 }
+
 @keyframes menu{
     from {width: 0;}
     to {width: 100%;}
@@ -152,6 +154,10 @@ footer.rodape {
 @media screen and (min-width: 520px) and (max-width: 800px){
 
     /* CABEÇALHO */
+    .cabecalho {
+        min-height: 300px;
+        max-height: 300px;
+    }
     .titulos h1 {
         font-size: 1.5em;
     }
@@ -208,7 +214,7 @@ footer.rodape {
 @media screen and (min-width: 800px) {
     /* CABEÇALHO */
     .cabecalho {
-        height: 95vh;
+        min-height: 300px;
         width: 100%;
     }
     .botaoFechar, .botaoExibir {
@@ -220,8 +226,8 @@ footer.rodape {
         left: auto;
         padding: 0;
     }
-    .titulos h1 {
-        font-size: 1.7em;
+    .titulos h1 a{
+        font-size: 1.2em;
         float: left;
         position: initial;
         float: left;
