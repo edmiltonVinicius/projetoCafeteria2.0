@@ -285,7 +285,7 @@ article.slide {
     margin-bottom: 5px;
 }
 
-@media (min-width: 520px) and (max-width: 800px) {
+@media screen and (min-width: 520px) and (max-width: 800px) {
     /* CABEÇALHO */
     .titulos h1 {
         font-size: 3.4em;

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafeteria do Paulo</title>
+    <link rel="stylesheet" href="css/cardapio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/janelaNavegador.jpg" />
+</head>
+
+<body>
+    <header class="cabecalho">
+        <button class="botaoExibir" onclick="exibirMenu()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
+        <hgroup class="titulos">
+            <h3>Nosso Cardápio</h3>
+            <h2>Sua Cafeteria favorita</h2>
+            <h1>Cafeteria do Paulo</h1>
+        </hgroup>
+        <nav class="menuPrincipal" id="idMenuPrincipal">
+            <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg"
+                    aria-hidden="true"></i></button>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobreNos.html">SOBRE NÓS</a></li>
+                <li><a href="nossoCardapio.html"><strong>CARDÁPIO</strong></a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudoPrincipal">
+        <article class="cafes">
+            <h2>Cafés</h2>
+            <table>
+                <tr>
+                    <td class="le">Expresso</td>
+                    <td class="ld">R$ 5,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Porro quisquam est qui dolorem ipsum</td>
+                </tr>
+                <tr>
+                    <td class="le">Café com leite</td>
+                    <td class="ld">R$ 9,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Et dolore magnam aliquam quaerat voluptatem</td>
+                </tr>
+                <tr>
+                    <td class="le">Capucchino</td>
+                    <td class="ld">R$ 9,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Ex ea commodi consequatur quis autem</td>
+                </tr>
+                <tr>
+                    <td class="le">Café gelado</td>
+                    <td class="ld">R$ 9,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Porro quisquam est qui dolorem ipsum</td>
+                </tr>
+            </table>
+        </article>
+        <article class="bebidas">
+            <h2>Bebidas</h2>
+            <table>
+                <tr>
+                    <td class="le">Água</td>
+                    <td class="ld">R$ 3,50</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Porro quisquam est qui dolorem ipsum</td>
+                </tr>
+                <tr>
+                    <td class="le">Cerveja</td>
+                    <td class="ld">R$ 15,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Et dolore magnam aliquam quaerat voluptatem</td>
+                </tr>
+                <tr>
+                    <td class="le">Vinho Branco</td>
+                    <td class="ld">R$ 35,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Ex ea commodi consequatur quis autem</td>
+                </tr>
+            </table>
+        </article>
+        <article class="sobremesas">
+            <h2>Sobremesas</h2>
+            <table>
+                <tr>
+                    <td class="le">Brigadeiro de colher</td>
+                    <td class="ld">R$ 9,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Porro quisquam est qui dolorem ipsum</td>
+                </tr>
+                <tr>
+                    <td class="le">Cheesecake com calda de chocolate</td>
+                    <td class="ld">R$ 10,00</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Et dolore magnam aliquam quaerat voluptatem</td>
+                </tr>
+                <tr>
+                    <td class="le">Torta de maçã com sorvete</td>
+                    <td class="ld">R$ 14,99</td>
+                </tr>
+                <tr>
+                    <td class="ldb">Ex ea commodi consequatur quis autem</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>Cafeteria do Paulo / Feita com amor 2019.</p>
+        <p>Desenvolvido por Edmilton Vincius Pansanato</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/slide.js"></script>
+</body>
+
+</html>
