@@ -49,12 +49,14 @@ header.cabecalho {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3em;
 }
-.titulos h1 {
+.titulos h1 a {
     position: absolute;
     top: 10%;
     left: 2%;
     color: #ffffff;
+    text-decoration: none;
 }
+
 @keyframes menu{
     from {width: 0;}
     to {width: 100%;}
@@ -152,11 +154,15 @@ footer.rodape {
 @media screen and (min-width: 520px) and (max-width: 800px){
 
     /* CABEÇALHO */
+    .cabecalho {
+        min-height: 300px;
+        max-height: 300px;
+    }
     .titulos h1 {
         font-size: 1.5em;
     }
     .titulos h2 {
-        font-size: 1.5em;
+        font-size: 1.3  em;
     }
     .titulos h3 {
         font-size: 3.7em;
@@ -208,7 +214,7 @@ footer.rodape {
 @media screen and (min-width: 800px) {
     /* CABEÇALHO */
     .cabecalho {
-        height: 95vh;
+        min-height: 300px;
         width: 100%;
     }
     .botaoFechar, .botaoExibir {
@@ -220,8 +226,8 @@ footer.rodape {
         left: auto;
         padding: 0;
     }
-    .titulos h1 {
-        font-size: 1.7em;
+    .titulos h1 a{
+        font-size: 1.2em;
         float: left;
         position: initial;
         float: left;
@@ -229,7 +235,7 @@ footer.rodape {
         margin-top: -200px;
     }
     .titulos h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     .titulos h3 {
         font-size: 5em;
