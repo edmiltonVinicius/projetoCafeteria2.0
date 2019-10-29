@@ -118,9 +118,8 @@ article.apresentacao {
 }
 p.texto {
     width: 90%;
-    margin: auto;
+    margin: 5% auto 0 auto;
     text-align: justify;
-    margin-top: 5%;
 }
 div.imagemTexto {
     width: 98%;
@@ -129,8 +128,8 @@ div.imagemTexto {
 }
 .imagemTexto img {
     float: left;
-    width: 50%;
-    height: 200px; 
+  width: 50%;
+    height: 200px;   
     margin-right: 2%;
     margin-left: 2%;
     border-radius: 5%;
@@ -141,7 +140,7 @@ article.proprietarios {
     width: 100%;
     min-height: 500px;
     max-height: 900px;
-    background-color: #e6f5f5;
+    background-color: #f0eeec;
 }
 .proprietarios h2 {
     font-family: 'Great Vibes', 'Arial',cursive;
@@ -204,4 +203,211 @@ footer.rodape {
 }
 .rodape p {
     margin-bottom: 1%;
+}
+
+/* VERSÃO TABLET */
+@media screen and (min-width: 550px) and (max-width: 800px) {
+     /* CABEÇALHO */
+     .cabecalho {
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .titulos h1 {
+        font-size: 1.5em;
+    }
+    .titulos h2 {
+        font-size: 1.3  em;
+    }
+    .titulos h3 {
+        font-size: 3.7em;
+    }
+    .botaoFechar, .botaoExibir {
+        height: 80px;
+        width: 85px;
+        font-size: 1.8em;
+    }
+
+    /*MENU*/
+    .menuPrincipal ul {
+        margin-top: 120px;
+    }
+    .menuPrincipal li {
+        padding: 40px;
+    }
+    .menuPrincipal a {
+        padding: 30px 80px;
+    }
+
+    /* ARTIGO APRESENTAÇÃO */
+    .apresentacao p {
+        font-size: 1.3em;
+    }
+    .apresentacao h2 {
+        font-size: 2.7em;
+    }
+    .imagemTexto img {
+        width: 60%;
+        height: 300px;
+    }
+
+    /*ARTIGO PROPRIETARIOS*/
+    .proprietarios {
+        height: 655px;
+    }
+    .proprietarios h2 {
+        padding-top: 20px;
+        font-size: 2.7em;
+    }
+    .proprietarios h3 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .patroes {
+        margin-top: 42px;
+    }
+    .patroes img {
+        width: 38%;
+        height: 150px;
+        margin-left: 6%;
+    }
+    .patroes ul {
+        margin-right: 4%;
+        margin-top: 0;
+    }
+    .patroes li {
+        padding-top: 18px;
+        font-size: 1.2em;
+    }
+
+    /* RODAPÉ */
+    footer.rodape {
+        font-size: 1.1em;
+    }
+}
+
+/* VERSÃO DESKTOP */
+@media screen and (min-width: 800px) {
+    /* CABEÇALHO */
+    .cabecalho {
+        min-height: 300px;
+        width: 100%;
+    }
+    .botaoFechar, .botaoExibir {
+        display: none;
+    }
+    .titulos {
+        position: absolute;
+        top: 220px;
+        left: auto;
+        padding: 0;
+    }
+    .titulos h1 a{
+        font-size: 1.2em;
+        float: left;
+        position: initial;
+        float: left;
+        padding-left: 2%;
+        margin-top: -200px;
+    }
+    .titulos h2 {
+        font-size: 1.5em;
+    }
+    .titulos h3 {
+        font-size: 5em;
+        margin-top: -15px;
+    }
+    nav.menuPrincipal {
+        display: inline;
+        position: unset;
+    }
+    .menuPrincipal ul {
+        margin: 0;
+        float: right;
+        margin-right: 9%;
+        margin-top: 5%;
+    }
+    .menuPrincipal li {
+        display: inline-block;
+        padding: 0; 
+        margin-left: 22px;
+    }
+    .menuPrincipal a {
+        padding: 0;
+        font-size: 1.1em;
+    }
+    .menuPrincipal a:hover {
+        font-weight: bolder;
+        background-color: rgba(0, 0, 0, .1);    
+    }
+
+    /* ARTIGO APRESENTAÇÃO */
+    .apresentacao {
+        height: 700px;
+    }
+    .apresentacao p {
+        font-size: 1.5em;
+        color: #9e9595;
+    }
+    .apresentacao h2 {
+        font-size: 3.5em;
+        padding-top: 30px;
+    }
+    .imagemTexto img {
+        width: 50%;
+        height: 300px;
+        box-shadow: 5px 5px 5px #a1a3a3;
+    }
+
+    /* ARTIGO PROPRIETARIOS */
+    .proprietarios {
+        height: 640px;
+        max-width: 100%;
+    }
+    .proprietarios h2 {
+        padding-top: 30px;
+        font-size: 3.3em;
+    }
+    .proprietarios h3 {
+        font-size: 1.4em;
+        padding-top: 1%;
+        margin-bottom: 5%;    
+    }
+    .patroes {
+        padding-left: 55%;
+    }
+    .patroes img {
+        width: 45%;
+        height: 190px;
+        border-radius: 40%;
+    }
+    .patroes ul {
+        float: initial;
+        padding: 20px 30px;
+        max-width: 100%;    
+    }
+    .patroes li {
+        font-size: 1.3em;
+        padding-top: 18px;
+    }
+    #gerente {
+        padding: initial;
+        margin: initial;
+        position: absolute;
+        top: 1425px;
+        left: 0;
+        padding-left: 16%;   
+    }
+    #gerente img {
+        width: 23%;
+        height: 190px;
+    }
+    #gerente li {
+        padding-top: 22px;
+    }
+
+    /* RODAPÉ */
+    footer.rodape {
+        font-size: 1.1em;
+        padding-top: 30px;
+    }
 }
