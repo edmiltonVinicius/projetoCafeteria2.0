@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100%;
+}
+
+/* CABEÇALHO */
+header.cabecalho {
+    width: 100%;
+    min-height: 500px;
+    max-height: 95vh;
+    background-image: url("../imagens/menuPrincipal.jpg");
+    background-size: 100% 100%; /* 1° largura - 2° altura */
+    background-repeat: no-repeat;
+    text-align: center; 
+}
+.botaoFechar, .botaoExibir {
+    float: right;
+    height: 70px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: #ffffff;
+    margin: 5% 6%;
+    border: 1.5px solid #c80303;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.botaoFechar:hover, .botaoExibir:hover {
+    border: 2px solid #c80303;
+}
+.titulos {
+    width: 95%;
+    height: 20%;
+    padding-top: 200px;
+    margin: auto;
+}
+.titulos h3 {
+    font-family: 'Great Vibes', 'Arial',cursive;
+    color: #ffffff;
+    font-size: 3.2em;
+}
+.titulos h2, h1 {
+    color: #f1e3e3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+}
+.titulos h1 a {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@keyframes menu{
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+nav.menuPrincipal {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Josefin Sans', sans-serif;
+    animation: menu 1s; 
+}
+.menuPrincipal ul {
+    margin-top: 95px;
+    min-height: 400px;
+}
+.menuPrincipal li {
+    padding:35px;
+}
+.menuPrincipal a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 30px 20px;
+    font-size: 1.3em;
+}
+.menuPrincipal a:hover {
+    background-color: #0f4e50;
+}
+
+/* CONTAINNER */
+main.containner {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* SESSÃO LOCALIDADE */
+section.localidade {
+    width: 100%;
+    height: 600px;
+}
+
+/* ARTIGO MAPA */
+article.mapa {
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    margin-top: 5%;
+    border: 1px #3f3e3e solid;
+    border-radius: 1%;
+}
+
+/* ARTIGO INFORMAÇÕES */
+article.informacoes {
+    width: 85%;
+    height: 60%;
+    margin: auto;
+    padding-top: 10px;
+}
+button.icone {
+    border: none;
+    color: #f33f3f;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+.titulo {
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    color: #c54141;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.texto {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #838080;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+
+/* RODAPÉ */
+footer.rodape {
+    width: 100%;
+    min-height: 85px;
+    max-height: 120px;
+    color: #adada9;
+    background-color: #181717;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+.rodape p {
+    margin-bottom: 1%;
+}
