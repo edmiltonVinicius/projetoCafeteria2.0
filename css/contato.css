@@ -142,6 +142,75 @@ button.icone {
     padding-left: 30px;
 }
 
+/* SESSÃO FORMULARIO */
+section.formulario {
+    width: 100%;
+    height: 670px;
+    margin-top: 5px;
+}
+.formulario h2 {
+    color: #5e3131;
+    font-family: 'Great Vibes', 'Arial',cursive;
+    font-size: 2.1em;
+    text-align: center;
+}
+form {
+    width: 98%;
+    margin: auto;
+    padding-top: 20px;
+}   
+form p {
+    margin-top: 30px;
+    padding-left: 2%;
+}
+form label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    color: #3f4242;
+    
+}
+label#mensagem {
+    display: block;
+}
+form input {
+    width: 75%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px #cacfcf solid;
+    padding: 1%;
+    color: #665f5f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+form input:focus {
+    border: 3px #cacfcf solid;
+}
+form textarea {
+    width: 95%;
+    margin-top: 5px;
+    padding: 10px 0 0 5px;
+    color: #665f5f;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 10px;
+    border: 1px #cacfcf solid;
+    font-size: 1.1em;
+}
+form textarea:focus {
+    border: 3px #cacfcf solid;
+}
+form button {
+    width: 60%;
+    height: 50px;
+    float: right;
+    margin-top: 20px;  
+    margin-right: 15px;
+    border-radius: 10px; 
+    border: 1px #550404 solid;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
 
 /* RODAPÉ */
 footer.rodape {
