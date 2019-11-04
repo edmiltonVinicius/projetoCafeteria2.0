@@ -142,6 +142,66 @@ button.icone {
     padding-left: 30px;
 }
 
+/* SESSÃO FORMULARIO */
+section.formulario {
+    width: 100%;
+    height: 500px;
+}
+.formulario h2 {
+    color: #5e3131;
+    font-family: 'Great Vibes', 'Arial',cursive;
+    font-size: 1.8em;
+    text-align: center;
+}
+form {
+    width: 98%;
+    min-height: 500px;
+    margin: auto;
+}   
+form p {
+    margin-top: 15px;
+    padding-left: 5%;
+}
+form label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    color: #2f3131;
+    
+}
+label#mensagem {
+    display: block;
+}
+form input {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px #cacfcf solid;
+    padding: 1%;
+    color: #665f5f;
+    font-family: cursive;
+}
+form textarea {
+    width: 90%;
+    margin-top: 5px;
+    padding: 5px;
+    color: #665f5f;
+    font-family: cursive;
+    border-radius: 10px;
+    border: 1px #cacfcf solid;
+}
+form button {
+    width: 60%;
+    height: 40px;
+    float: right;
+    margin-top: 20px;  
+    margin-right: 15px;
+    border-radius: 10px; 
+    border: 1px #550404 solid;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+}
+
 
 /* RODAPÉ */
 footer.rodape {
