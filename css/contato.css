@@ -158,7 +158,7 @@ section.formulario {
 form {
     width: 98%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
 }   
 form p {
     margin-top: 30px;
@@ -172,7 +172,9 @@ form label {
 label#mensagem {
     display: block;
 }
-form input {    width: 75%;
+form input {    
+    width: 75%;
+    height: 40px;
     border-radius: 10px;
     border: 1px #cacfcf solid;
     padding: 1%;
