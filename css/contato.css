@@ -151,6 +151,7 @@ section.formulario {
 .formulario h2 {
     color: #5e3131;
     font-family: 'Great Vibes', 'Arial',cursive;
+
     font-size: 2.1em;
     text-align: center;
 }
@@ -166,15 +167,12 @@ form p {
 form label {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3em;
-    color: #3f4242;
-    
+    color: #3f4242;    
 }
 label#mensagem {
     display: block;
 }
-form input {
-    width: 75%;
-    height: 40px;
+form input {    width: 75%;
     border-radius: 10px;
     border: 1px #cacfcf solid;
     padding: 1%;
