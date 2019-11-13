@@ -49,5 +49,9 @@ router.get('/contato.html', (req, res) => {
         }
     })
 })
+router.post('/contato.html', (req, res) => {
+    console.log('POST enviado para o servidor')
+    res.redirect('/')
+})
 
 module.exports = router

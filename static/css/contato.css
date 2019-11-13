@@ -7,6 +7,7 @@ body {
     min-height: 100%;
 }
 
+
 /* CABEÇALHO */
 header.cabecalho {
     width: 100%;
@@ -295,10 +296,16 @@ footer.rodape {
     form button {
         height: 60px;
     }
+
+    /* RODAPÉ */
+    footer.rodape {
+        font-size: 1.1em;
+    }
 }
 
 /* VERSÃO DESKTOP */
 @media screen and (min-width: 800px){
+
     /* CABEÇALHO */
     .cabecalho {
         min-height: 300px;
@@ -353,4 +360,76 @@ footer.rodape {
     }
 
     /* SESSÃO LOCALIDADE */
+    section.localidade{
+        height: 410px;
+    }
+
+    /* ARTIGO MAPA */
+    article.mapa {
+        width: 50%;
+        height: 80%;
+        display: inline-block;
+        margin: 4% 0 0 5%;
+    }
+
+    /* ARTIGO INFORMAÇÕES */
+    article.informacoes {
+        width: 40%;
+        height: 70%;
+        margin: initial;
+        float: right;
+        font-size: 1.2em;
+        padding-top: 30px;
+        margin-right: 20px;
+    }
+
+    /* IMAGEM ENTRE AS DUAS SEÇÕES*/
+    div.imagemXicara {
+        width: 200px;
+        height: 133px;
+        margin: 20px auto 30px auto;
+        background-image: url("../imagens/imagemBorda.jpg");
+    }
+
+    /* SESSÃO FORMULARIO */
+    section.formulario {
+        height: 780px;
+    }
+    .formulario h2 {
+        font-size: 2.9em;
+    }
+    form {
+        width: 80%;
+        margin: auto;
+        padding-left: 5%;
+    }
+    form p{
+        margin-top: 35px;
+    }
+    form label {
+        font-size: 1.5em;
+        color: #4d5353;
+    }
+    form input {
+        height: 55px;
+        margin-left: 12px; 
+        font-size: 1.1em;
+        border: 2px #cacfcf solid;
+    }
+    form textarea {
+        border: 2px #cacfcf solid;
+    }
+    form button {
+        width: 30%;
+        height: 70px;
+        font-size: 1.1em;
+        margin: 25px 30% 0 0;
+        border: 2px #550404 solid;
+    }
+
+    /* RODAPÉ */
+    footer.rodape {
+        font-size: 1.1em;
+        padding-top: 30px;
+    }
 }
