@@ -1,0 +1,28 @@
+{
+  "name": "projetocafeteria2.0",
+  "version": "0.0.1",
+  "description": "Meu primeiro projeto pessoal completo.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmiltonVinicius/projetoCafeteria2.0.git"
+  },
+  "author": "Edmilton Vinicius Pansanato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edmiltonVinicius/projetoCafeteria2.0/issues"
+  },
+  "homepage": "https://github.com/edmiltonVinicius/projetoCafeteria2.0#readme",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.4"
+  }
+}

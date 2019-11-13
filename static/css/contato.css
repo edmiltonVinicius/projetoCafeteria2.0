@@ -119,6 +119,7 @@ article.informacoes {
     height: 60%;
     margin: auto;
     padding-top: 10px;
+    text-align: center;
 }
 button.icone {
     border: none;
@@ -151,7 +152,6 @@ section.formulario {
 .formulario h2 {
     color: #5e3131;
     font-family: 'Great Vibes', 'Arial',cursive;
-
     font-size: 2.1em;
     text-align: center;
 }
@@ -225,4 +225,132 @@ footer.rodape {
 }
 .rodape p {
     margin-bottom: 1%;
+}
+
+/* VERSÃO TABLET */
+@media screen and (min-width: 500px) and (max-width: 800px){
+    /* CABEÇALHO */
+    .cabecalho {
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .titulos h1 {
+        font-size: 1.5em;
+    }
+    .titulos h2 {
+        font-size: 1.3  em;
+    }
+    .titulos h3 {
+        font-size: 3.7em;
+    }
+    .botaoFechar, .botaoExibir {
+        height: 80px;
+        width: 85px;
+        font-size: 1.8em;
+    }
+
+    /*MENU*/
+    .menuPrincipal ul {
+        margin-top: 120px;
+    }
+    .menuPrincipal li {
+        padding: 40px;
+    }
+    .menuPrincipal a {
+        padding: 30px 80px;
+    }
+
+    /* SESSÃO LOCALIDADE */
+    section.localidade {
+        height: 660px;
+    }
+
+    /* ARTIGO MAPA */
+    article.mapa {
+        margin-top: 8%;
+        height: 50%;
+    }
+
+    /* ARTIGO INFORMAÇÕES */
+    article.informacoes {
+        padding-top: 30px;
+        font-size: 1.1em;
+    }
+
+    /* SESSÃO FORMULARIO */
+    section.formulario {
+        margin-top: 15px;
+        height: 700px;
+    }
+    .formulario h2 {
+        font-size: 2.3em;
+    }
+    form label {
+        font-size: 1.4em;
+    }
+    form input {
+        height: 45px;
+        margin-left: 8px;
+    }
+    form button {
+        height: 60px;
+    }
+}
+
+/* VERSÃO DESKTOP */
+@media screen and (min-width: 800px){
+    /* CABEÇALHO */
+    .cabecalho {
+        min-height: 300px;
+        width: 100%;
+    }
+    .botaoFechar, .botaoExibir {
+        display: none;
+    }
+    .titulos {
+        position: absolute;
+        top: 220px;
+        left: auto;
+        padding: 0;
+    }
+    .titulos h1 a{
+        font-size: 1.2em;
+        float: left;
+        position: initial;
+        float: left;
+        padding-left: 2%;
+        margin-top: -200px;
+    }
+    .titulos h2 {
+        font-size: 1.5em;
+    }
+    .titulos h3 {
+        font-size: 5em;
+        margin-top: -15px;
+    }
+    nav.menuPrincipal {
+        display: inline;
+        position: unset;
+    }
+    .menuPrincipal ul {
+        margin: 0;
+        float: right;
+        margin-right: 9%;
+        margin-top: 5%;
+    }
+    .menuPrincipal li {
+        display: inline-block;
+        padding: 0; 
+        margin-left: 22px;
+    }
+    .menuPrincipal a {
+        padding: 0;
+        font-size: 1.1em;
+    }
+    .menuPrincipal a:hover {
+        font-weight: bolder;
+        background-color: rgba(0, 0, 0, .1);    
+    }
+
+    /* SESSÃO LOCALIDADE */
 }
