@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const fs = require('fs')
 
 //  INDEX
 router.get('/', (req, res) => {
@@ -41,17 +42,26 @@ router.get('/nossocardapio.html', (req, res) => {
 })
 
 // CONTATO
-router.get('/contato.html', (req, res) => {
-    console.log('Bateu na página contato')
-    res.sendFile(__dirname + '/html/contato.html', err => {
-        if(err){
-            res.send('<p>Desculpe página não encontrada')
-        }
+router.route('/contato.html')
+    .get((req, res) => {
+        console.log('Bateu na página contato')
+        res.sendFile(__dirname + '/html/contato.html', err => {
+            if(err){
+                res.send('<p>Desculpe página não encontrada')
+            }
+        })
     })
-})
-router.post('/contato.html', (req, res) => {
-    console.log('POST enviado para o servidor')
-    res.redirect('/')
-})
+    .post((req, res, next) => {
+        console.log('POST enviado para o servidor')
+        nome = req.body.nomeUsuario
+        email = req.body.emailUsuario
+        mensagem = req.body.mensagemUsuario
+        fs.writeFile(__dirname + '/arquivosUsuarios/user_' + nome + '.txt', 
+        `Visitante: ${nome}, email: ${email} e a mensagem: ${mensagem}`, 
+        'utf-8', err => {
+            console.log(err || 'Arquivos salvo!')
+        })
+        res.redirect('/')
+    })
 
 module.exports = router

@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const compression = require('compression')
-const rotas = require('./rotas')
 const porta = 3000
+const rotas = require('./rotas')
+
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(__dirname, + 'static'))
