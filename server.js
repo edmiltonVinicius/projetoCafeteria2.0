@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const compression = require('compression')
-const porta = 3000
+const porta = process.env.PORT || 3000
 const rotas = require('./routers')
 
 
