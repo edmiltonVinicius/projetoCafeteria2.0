@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const compression = require('compression')
 const porta = 3000
-const rotas = require('./rotas')
+const rotas = require('./routers')
 
 
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -11,8 +11,8 @@ app.use(express.static(__dirname, + 'static'))
 app.use(compression())
 
 app.use('/', rotas)
-app.use('/sobreNos.html', rotas)
-app.use('/nossocardapio.html', rotas)
+app.use('/sobrenos.html', rotas)
+app.use('/nosso-cardapio.html', rotas)
 app.use('/contato.html', rotas)
 
 

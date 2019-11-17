@@ -22,9 +22,9 @@ router.get('/index.html', (req, res) => {
 })
 
 // SOBRE NOS 
-router.get('/sobrenos.html', (req, res) => {
+router.get('/sobre-nos.html', (req, res) => {
     console.log('Bateu na página sobre nós')
-    res.sendFile(__dirname + '/html/sobreNos.html', err => {
+    res.sendFile(__dirname + '/html/sobre-nos.html', err => {
         if(err){
             res.send('<p>Desculpe página não encontrada')
         }
@@ -32,9 +32,9 @@ router.get('/sobrenos.html', (req, res) => {
 })
 
 // CARDAPIO 
-router.get('/nossocardapio.html', (req, res) => {
+router.get('/nosso-cardapio.html', (req, res) => {
     console.log('Bateu na página nosso cardápio')
-    res.sendFile(__dirname + '/html/nossoCardapio.html', err => {
+    res.sendFile(__dirname + '/html/nosso-cardapio.html', err => {
         if(err){
             res.send('<p>Desculpe página não encontrada')
         }
@@ -56,7 +56,7 @@ router.route('/contato.html')
         nome = req.body.nomeUsuario
         email = req.body.emailUsuario
         mensagem = req.body.mensagemUsuario
-        fs.writeFile(__dirname + '/arquivosUsuarios/user_' + nome + '.txt', 
+        fs.writeFile(__dirname + '/user-files/user_' + nome + '.txt', 
         `Visitante: ${nome}, email: ${email} e a mensagem: ${mensagem}`, 
         'utf-8', err => {
             console.log(err || 'Arquivos salvo!')
