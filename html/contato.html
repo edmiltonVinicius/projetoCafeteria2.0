@@ -21,16 +21,16 @@
         <hgroup class="titulos">
             <h3>Contato</h3>
             <h2>Mande uma mensagem, nos visite... Esperamos por você.</h2>
-            <h1><a class="linkHome" href="index.html">Cafeteria do Paulo</a></h1>
+            <h1><a class="linkHome" href="/">Cafeteria do Paulo</a></h1>
         </hgroup>
         <nav class="menuPrincipal" id="idMenuPrincipal">
             <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg"
                     aria-hidden="true"></i></button>
             <ul>
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="sobre-nos.html">SOBRE NÓS</a></li>
-                <li><a href="nosso-cardapio.html">CARDÁPIO</a></li>
-                <li><a href="contato.html"><strong>CONTATO</strong></a></li>
+                <li><a href="/index">INÍCIO</a></li>
+                <li><a href="/sobre-nos">SOBRE NÓS</a></li>
+                <li><a href="/nosso-cardapio">CARDÁPIO</a></li>
+                <li><a href="/contato"><strong>CONTATO</strong></a></li>
             </ul>
         </nav>
     </header>
@@ -68,17 +68,17 @@
 
         <section class="formulario">
             <h2>Nos mande uma mensagem, nós gostamos.</h2>
-            <form name="formularioContato" action="/contato.html" method="post" autocomplete="off" onsubmit="return validacaoFormulario()">
+            <form name="formularioContato" action="/contato" method="post" autocomplete="off" onsubmit="return validacaoFormulario()">
                 <p>
-                    <label for="nome">Nome</label>
+                    <label for="nome" style="display: none;">Nome</label>
                     <input type="text" name="nomeUsuario" id="nome" required placeholder="Digite aqui o seu nome">
                 </p>
                 <p>
-                    <label for="email">E-mail</label>
+                    <label for="email" style="display: none;">E-mail</label>
                     <input type="text" name="emailUsuario" id="email" required placeholder="Agora digite o seu e-mail">
                 </p>
                 <p>
-                    <label for="mensagem">Digite sua menssgem</label>
+                    <label for="mensagem" style="display: none;">Digite sua menssgem</label>
                     <textarea name="mensagemUsuario" id="mensagemUsuario" required cols="30" rows="15" placeholder="Agora digite aqui sua mensagem"></textarea>
                 </p>
                 <button type="submit">Enviar Mensasagem</button>

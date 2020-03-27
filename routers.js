@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/index.html', (req, res) => {
+router.get('/index', (req, res) => {
     res.sendFile(__dirname + '/html/index.html', err => {
         if(err){
             res.send('<p>Desculpe página não encontrada')
@@ -22,7 +22,7 @@ router.get('/index.html', (req, res) => {
 })
 
 // SOBRE NOS 
-router.get('/sobre-nos.html', (req, res) => {
+router.get('/sobre-nos', (req, res) => {
     res.sendFile(__dirname + '/html/sobre-nos.html', err => {
         if(err){
             res.send('<p>Desculpe página não encontrada')
@@ -31,7 +31,7 @@ router.get('/sobre-nos.html', (req, res) => {
 })
 
 // CARDAPIO 
-router.get('/nosso-cardapio.html', (req, res) => {
+router.get('/nosso-cardapio', (req, res) => {
     res.sendFile(__dirname + '/html/nosso-cardapio.html', err => {
         if(err){
             res.send('<p>Desculpe página não encontrada')
@@ -40,7 +40,7 @@ router.get('/nosso-cardapio.html', (req, res) => {
 })
 
 // CONTATO
-router.route('/contato.html')
+router.route('/contato')
     .get((req, res) => {
         res.sendFile(__dirname + '/html/contato.html', err => {
             if(err){
