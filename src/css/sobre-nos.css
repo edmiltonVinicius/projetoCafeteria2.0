@@ -26,7 +26,7 @@ header.cabecalho {
     text-align: center;
     color: #ffffff;
     margin: 5% 6%;
-    border: 1.5px solid #c80303;
+    border: 1px solid #c80303;
     font-size: 1.5em;
     cursor: pointer;
 }

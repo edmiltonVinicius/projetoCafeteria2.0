@@ -1,5 +1,5 @@
 *{padding:0;margin:0;box-sizing:border-box}body{min-height:100%}header.cabecalho{width:100%;min-height:500px;max-height:95vh;background-image:url("../dest-img/menuPrincipal.jpg");background-size:100% 100%;background-repeat:no-repeat;text-align:center}
-.botaoFechar,.botaoExibir{float:right;height:70px;width:80px;border-radius:40px;background-color:rgba(0,0,0,0.9);text-align:center;color:#fff;margin:5% 6%;border:1.5px solid #c80303;font-size:1.5em;cursor:pointer}
+.botaoFechar,.botaoExibir{float:right;height:70px;width:80px;border-radius:40px;background-color:rgba(0,0,0,0.9);text-align:center;color:#fff;margin:5% 6%;border:1px solid #c80303;font-size:1.5em;cursor:pointer}
 .botaoFechar:hover,.botaoExibir:hover{border:2px solid #c80303}.titulos{width:95%;height:20%;padding-top:200px;margin:auto}
 .titulos h1{font-family:'Great Vibes','Arial',cursive;color:#fff;font-size:2.8em}
 .titulos h2{color:#f1e3e3;font-family:'Josefin Sans',sans-serif;font-size:1.3em}

@@ -6,7 +6,7 @@ const babel = require('gulp-babel')
 const imagemin = require('gulp-imagemin')
 const rename = require('gulp-rename')
 
-const minCss = () => {
+const minCss = (db) => {
     const arquivos = ['style', 'contato', 'cardapio', 'sobre-nos']
     const min = arquivos.map((arquivo) => {
         gulp.src(`src/css/${arquivo}.css`)
@@ -17,7 +17,7 @@ const minCss = () => {
             .pipe(rename(`${arquivo}.min.css`))
             .pipe(gulp.dest('static/dest-css/'));
     })
-    return min
+    db()
 }
 
 const minJs = () => {
@@ -37,8 +37,8 @@ const minImg = () => {
 }
 
 const watch = () => {
-    gulp.watch('src/js/*.js', minJs)
+    gulp.watch(['src/js/*.js', 'src/css/*.css'], gulp.parallel(minJs, minCss))
 }
 
 
-module.exports.default = gulp.series(minJs, minImg, minCss)
+module.exports.default = gulp.series(minJs, minImg, minCss, watch)
