@@ -1,4 +1,4 @@
-let arrayImagens = ["static/imagens/carrosel01.jpg", "static/imagens/carrosel02.jpg", "static/imagens/carrosel03.jpg"]
+let arrayImagens = ["static/dest-img/carrosel01.jpg", "static/dest-img/carrosel02.jpg", "static/dest-img/carrosel03.jpg"]
 let verficiador = 0
 let imgHtml = document.getElementById('imagens')
 
