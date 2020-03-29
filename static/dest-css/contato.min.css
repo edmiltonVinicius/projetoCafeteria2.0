@@ -19,8 +19,9 @@ form label{font-family:'Josefin Sans',sans-serif;font-size:1.3em;color:#3f4242}
 label#mensagem{display:block}form input{width:75%;height:40px;border-radius:10px;border:1px #cacfcf solid;padding:1%;color:#665f5f;font-family:'Josefin Sans',sans-serif;font-size:1em}
 form input:focus{border:3px #cacfcf solid}form textarea{width:95%;margin-top:5px;padding:10px 0 0 5px;color:#665f5f;font-family:'Josefin Sans',sans-serif;border-radius:10px;border:1px #cacfcf solid;font-size:1.1em}
 form textarea:focus{border:3px #cacfcf solid}form button{width:60%;height:50px;float:right;margin-top:20px;margin-right:15px;border-radius:10px;border:1px #550404 solid;background-color:rgba(0,0,0,0.0);font-family:'Josefin Sans',sans-serif;font-size:1em}
-footer.rodape{width:100%;min-height:85px;max-height:120px;color:#adada9;background-color:#181717;font-family:Arial,Helvetica,sans-serif;padding:15px;text-align:center}
-.rodape p{margin-bottom:1%}@media screen and (min-width:500px) and (max-width:800px){.cabecalho{min-height:300px;max-height:300px}
+footer.rodape{width:100%;min-height:85px;max-height:120px;color:#edecf1;background-color:#000;font-family:Arial,Helvetica,sans-serif;padding:15px;text-align:center}
+.rodape p{margin-bottom:1%}.iconsRodape{color:#fff;text-decoration:none;margin-right:30px}
+@media screen and (min-width:500px) and (max-width:800px){.cabecalho{min-height:300px;max-height:300px}
 .titulos h1{font-size:1.5em}.titulos h2{font-size:1.3 em}.titulos h3{font-size:3.7em}
 .botaoFechar,.botaoExibir{height:80px;width:85px;font-size:1.8em}.menuPrincipal ul{margin-top:120px}
 .menuPrincipal li{padding:40px}.menuPrincipal a{padding:30px 80px}section.localidade{height:660px}

@@ -8,7 +8,7 @@
     <title>Cafeteria do Paulo</title>
     <link rel="stylesheet" href="../static/dest-css/style.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -18,14 +18,14 @@
 <body onload="sliderAutomatico1()">
     <header class="cabecalho">
         <button class="botaoExibir" onclick="exibirMenu()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></button>
-
+        
         <hgroup class="titulos">
             <h1>Cafeteria do Paulo</h1>
             <h2>Sua Cafeteria favorita</h2>
         </hgroup>
         <nav class="menuPrincipal" id="idMenuPrincipal">
             <button class="botaoFechar" onclick="esconderMenu()"><i class="fa fa-times fa-lg"
-                    aria-hidden="true"></i></button>
+                aria-hidden="true"></i></button>
             <ul>
                 <li><a href="/">INÍCIO</a></li>
                 <li><a href="/sobre-nos">SOBRE NÓS</a></li>
@@ -36,7 +36,7 @@
     </header>
 
     <main class="conteudoPrincipal">
-
+        
         <article class="mensagem">
             <header class="cabecalhoMensagem">
                 <h2>Café com Paixão</h2>
@@ -56,7 +56,7 @@
                 <p class="rodapeMensagem">Em minha casa, você não é apenas cliente, é membro da família...</p>
             </footer>
         </article>
-
+        
         <article class="tabela">
             <div class="gambi">
                 <h2>È hora do Café...</h2>
@@ -103,15 +103,15 @@
                 <img id="imagens" src="../static/dest-img/carrosel01.jpg" alt="Imagens Cafeteria do Paulo">
             </div>
             <button onclick="voltarSlider()" class="btn btnMenos" id="btnMenos"><i class="fa fa-chevron-left"
+                aria-hidden="true"></i></button>
+                <button onclick="avancarSlider()" class="btn btnMais"><i class="fa fa-chevron-right"
                     aria-hidden="true"></i></button>
-            <button onclick="avancarSlider()" class="btn btnMais"><i class="fa fa-chevron-right"
-                    aria-hidden="true"></i></button>
-        </article>
-
-    </main>
-    <footer class="rodape">
-        <div class="gambRodape">
-            <div class="informacoes">
+                </article>
+                
+            </main>
+            <footer class="rodape">
+                <div class="gambRodape">
+                    <div class="informacoes">
                 <h2>Esperamos sua visita</h2>
                 <p>
                     Segunda-feira - Sábado: <span>8h</span> - <span>18h</span>
@@ -122,11 +122,22 @@
                 <a href="/contato" class="contato">Entre em contato</a>
             </div>
             <div class="formalidade">
-                <p>Cafeteria do Paulo / Feita com amor 2019.</p>
-                <p>Desenvolvido por Edmilton Vincius Pansanato</p>
+                <p>
+                    <a class="iconsRodape" href="https://br.linkedin.com/in/edmilton-vinicius-pansanato-339682189">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a class="iconsRodape" class="nav-link text-white" href="https://www.facebook.com/paty.vinicius.7">
+                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a class="iconsRodape" class="nav-link text-white" href="https://github.com/edmiltonVinicius">
+                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                    </a>
+                </p>
+                <p>Edmilton Vincius Pansanato - 2020</p>
             </div>
         </div>
     </footer>
+    <script src="https://use.fontawesome.com/cc25343ae0.js"></script>
     <script src="../static/dest-js/script.min.js"></script>
 </body>
 
