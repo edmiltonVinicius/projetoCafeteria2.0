@@ -15,9 +15,9 @@ button.icone{border:0;color:#f33f3f;background-color:rgba(0,0,0,0);margin-top:30
 .texto{font-family:'Josefin Sans',sans-serif;color:#838080;margin-top:5px;padding-left:30px}
 section.formulario{width:100%;height:700px}.formulario h2{color:#5e3131;font-family:'Great Vibes','Arial',cursive;font-size:2.1em;text-align:center}
 form{width:98%;margin:auto;padding-top:10px}form p{margin-top:30px;padding-left:2%}
-form label{display:none}label#mensagem{display:block}form input{width:80%;height:50px;border-radius:10px;border:1px #cacfcf solid;padding:1%;color:#665f5f;font-family:'Josefin Sans',sans-serif;font-size:1.2em}
+form label{display:none}label#mensagem{display:block}form input{width:90%;height:50px;border-radius:10px;border:1px #cacfcf solid;padding:1%;color:#665f5f;font-family:'Josefin Sans',sans-serif;font-size:1.2em}
 form input:focus{border:3px #cacfcf solid}form textarea{width:95%;margin-top:5px;padding:10px 0 0 5px;color:#665f5f;font-family:'Josefin Sans',sans-serif;border-radius:10px;border:1px #cacfcf solid;font-size:1.2em}
-form textarea:focus{border:3px #cacfcf solid}form button{width:60%;height:50px;float:right;margin-top:20px;margin-right:15px;border-radius:10px;border:1px #550404 solid;background-color:rgba(0,0,0,0.0);font-family:'Josefin Sans',sans-serif;font-size:1em}
+form textarea:focus{border:3px #cacfcf solid}form button{width:60%;height:50px;float:right;margin-top:20px;margin-right:15px;border-radius:10px;border:1px #550404 solid;background-color:rgba(0,0,0,0.0);font-family:'Josefin Sans',sans-serif;font-size:1.2em}
 footer.rodape{width:100%;min-height:85px;max-height:120px;color:#edecf1;background-color:#000;font-family:Arial,Helvetica,sans-serif;padding:15px;text-align:center}
 .rodape p{margin-bottom:1%}.iconsRodape{color:#fff;text-decoration:none;margin-right:30px;margin-bottom:8px}
 @media screen and (min-width:500px) and (max-width:800px){.cabecalho{min-height:300px;max-height:300px}
@@ -37,6 +37,6 @@ section.localidade{height:410px}article.mapa{width:50%;height:80%;display:inline
 article.informacoes{width:40%;height:70%;margin:initial;float:right;font-size:1.2em;padding-top:30px;margin-right:20px}
 div.imagemXicara{width:200px;height:133px;margin:20px auto 30px auto;background-image:url("../dest-img/imagemBorda.jpg")}
 section.formulario{height:780px}.formulario h2{font-size:2.9em}form{width:80%;margin:auto;padding-left:5%}
-form p{margin-top:35px}form input{height:55px;margin-left:12px;font-size:1.1em;border:2px #cacfcf solid}
-form textarea{border:2px #cacfcf solid}form button{width:30%;height:70px;font-size:1.1em;margin:25px 30% 0 0;border:2px #550404 solid}
+form p{margin-top:35px}form input{width:70%;height:55px;margin-left:12px;font-size:1.1em;border:2px #cacfcf solid}
+form textarea{border:2px #cacfcf solid}form button{width:30%;height:70px;font-size:1.2em;margin:25px 30% 0 0;border:2px #550404 solid}
 footer.rodape{font-size:1.1em;padding-top:30px}}
