@@ -101,7 +101,7 @@ main.containner {
 /* SESSÃO LOCALIDADE */
 section.localidade {
     width: 100%;
-    height: 700px;
+    height: 680px;
 }
 
 /* ARTIGO MAPA */
@@ -147,7 +147,7 @@ button.icone {
 /* SESSÃO FORMULARIO */
 section.formulario {
     width: 100%;
-    height: 750px;
+    height: 700px;
 }
 .formulario h2 {
     color: #5e3131;
@@ -173,7 +173,7 @@ label#mensagem {
 }
 form input {    
     width: 80%;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
     border: 1px #cacfcf solid;
     padding: 1%;
@@ -229,6 +229,7 @@ footer.rodape {
     color: #ffffff;
     text-decoration: none;
     margin-right: 30px;
+    margin-bottom: 8px;
 }
 
 /* VERSÃO TABLET */

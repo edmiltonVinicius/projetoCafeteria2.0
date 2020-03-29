@@ -8,18 +8,18 @@ to{width:100%}}nav.menuPrincipal{display:none;width:100%;min-height:100%;max-hei
 .menuPrincipal ul{margin-top:95px;min-height:400px}.menuPrincipal li{padding:35px}
 .menuPrincipal a{color:#fff;text-decoration:none;padding:30px 20px;font-size:1.3em}
 .menuPrincipal a:hover{background-color:#0f4e50}main.containner{width:100%;min-height:100vh}
-section.localidade{width:100%;height:700px}article.mapa{width:80%;height:40%;margin:auto;margin-top:30px;border:1px #3f3e3e solid;border-radius:1%}
+section.localidade{width:100%;height:680px}article.mapa{width:80%;height:40%;margin:auto;margin-top:30px;border:1px #3f3e3e solid;border-radius:1%}
 article.informacoes{width:85%;height:80%;margin:auto;padding-top:30px;text-align:center}
 button.icone{border:0;color:#f33f3f;background-color:rgba(0,0,0,0);margin-top:30px;display:inline-block;font-size:1.2em}
 .titulo{padding-left:10px;display:inline-block;font-size:1.2em;color:#c54141;font-family:'Josefin Sans',sans-serif}
 .texto{font-family:'Josefin Sans',sans-serif;color:#838080;margin-top:5px;padding-left:30px}
-section.formulario{width:100%;height:750px}.formulario h2{color:#5e3131;font-family:'Great Vibes','Arial',cursive;font-size:2.1em;text-align:center}
+section.formulario{width:100%;height:700px}.formulario h2{color:#5e3131;font-family:'Great Vibes','Arial',cursive;font-size:2.1em;text-align:center}
 form{width:98%;margin:auto;padding-top:10px}form p{margin-top:30px;padding-left:2%}
-form label{display:none}label#mensagem{display:block}form input{width:80%;height:40px;border-radius:10px;border:1px #cacfcf solid;padding:1%;color:#665f5f;font-family:'Josefin Sans',sans-serif;font-size:1.2em}
+form label{display:none}label#mensagem{display:block}form input{width:80%;height:50px;border-radius:10px;border:1px #cacfcf solid;padding:1%;color:#665f5f;font-family:'Josefin Sans',sans-serif;font-size:1.2em}
 form input:focus{border:3px #cacfcf solid}form textarea{width:95%;margin-top:5px;padding:10px 0 0 5px;color:#665f5f;font-family:'Josefin Sans',sans-serif;border-radius:10px;border:1px #cacfcf solid;font-size:1.2em}
 form textarea:focus{border:3px #cacfcf solid}form button{width:60%;height:50px;float:right;margin-top:20px;margin-right:15px;border-radius:10px;border:1px #550404 solid;background-color:rgba(0,0,0,0.0);font-family:'Josefin Sans',sans-serif;font-size:1em}
 footer.rodape{width:100%;min-height:85px;max-height:120px;color:#edecf1;background-color:#000;font-family:Arial,Helvetica,sans-serif;padding:15px;text-align:center}
-.rodape p{margin-bottom:1%}.iconsRodape{color:#fff;text-decoration:none;margin-right:30px}
+.rodape p{margin-bottom:1%}.iconsRodape{color:#fff;text-decoration:none;margin-right:30px;margin-bottom:8px}
 @media screen and (min-width:500px) and (max-width:800px){.cabecalho{min-height:300px;max-height:300px}
 .titulos h1{font-size:1.5em}.titulos h2{font-size:1.3 em}.titulos h3{font-size:3.7em}
 .botaoFechar,.botaoExibir{height:80px;width:85px;font-size:1.8em}.menuPrincipal ul{margin-top:120px}

@@ -18,16 +18,16 @@ div.gambi{width:100%;height:100%;background-color:rgba(0,0,0,0.4)}.tabelaPrecos{
 .btnCardapio{border:1px solid #eee5e5f1;color:#fff;text-align:center;padding:4% 28%;text-decoration:none;font-family:'Josefin Sans',sans-serif;font-size:1.2em;margin:0 10% 0 10%}
 .btnCardapio:hover{border-color:#a59999;color:#a59999}article.slide{width:100%;min-height:670px;max-height:820px;text-align:center}
 .slide h2{padding-top:8%;font-family:'Great Vibes','Arial',cursive;color:#c54141;font-size:2.4em}
-.slide p{color:#4b4646;font-family:'Josefin Sans',sans-serif;font-size:1.2em;margin-top:10%}
-.sliderImagens{width:100%;min-height:450px;max-height:750px;padding-top:20px}.sliderImagens img{width:75%;height:427px;border:1px #113536 solid;border-radius:10px}
-.btn{display:none}.rodape{width:100%;height:580px;background-color:black;text-align:center;color:#cac0c0;font-family:'Josefin Sans',sans-serif;background-image:url('../dest-img/rodape.jpg');background-repeat:no-repeat;background-size:100% 100%}
+.slide p{color:#4b4646;font-family:'Josefin Sans',sans-serif;font-size:1.2em;margin-top:4%;width:95%}
+.sliderImagens{width:100%;min-height:450px;max-height:750px;padding-top:20px}.sliderImagens img{width:90%;height:427px;border:1px #113536 solid;border-radius:10px}
+.btn{display:none}.rodape{width:100%;height:560px;background-color:black;text-align:center;color:#cac0c0;font-family:'Josefin Sans',sans-serif;background-image:url('../dest-img/rodape.jpg');background-repeat:no-repeat;background-size:100% 100%}
 .gambRodape{background-color:rgba(0,0,0,.6);width:100%;height:100%}.informacoes{width:100%;min-height:80%}
-.informacoes h2{font-family:'Great Vibes','Arial',cursive;color:#c73002;font-size:2.5em;padding-top:30px}
+.informacoes h2{font-family:'Great Vibes','Arial',cursive;color:#c73002;font-size:2.5em;padding-top:50px}
 .informacoes p{padding-top:20px;font-size:1.2em}.informacoes span{color:#fff;font-size:1.1em}
 .informacoes h3{padding-top:10%;color:#fff}.endereco{padding-top:10%;color:#fff;margin-bottom:12%}
 .contato{padding:5% 15%;border:1px solid #fff;color:#fff;text-decoration:none;font-size:1.3em}
 .formalidade{width:100%;min-height:20%;max-height:35%;color:#edecf1;background-color:#000;font-family:Arial,Helvetica,sans-serif;padding-top:20px}
-.formalidade p{margin-bottom:5px}.iconsRodape{color:#fff;text-decoration:none;margin-right:30px}
+.formalidade p{margin-bottom:5px}.iconsRodape{color:#fff;text-decoration:none;margin-right:30px;margin-bottom:8px}
 @media screen and (min-width:520px) and (max-width:800px){.titulos h1{font-size:3.4em}
 .titulos h2{font-size:1.4em}.botaoFechar,.botaoExibir{height:70px;width:80px;font-size:1.8em}
 .menuPrincipal ul{margin-top:120px}.menuPrincipal li{padding:40px}.menuPrincipal a{padding:30px 80px}
@@ -35,7 +35,7 @@ div.gambi{width:100%;height:100%;background-color:rgba(0,0,0,0.4)}.tabelaPrecos{
 .rodapeMensagem{font-size:1.6em;padding:0;text-align:center}.tabela{font-size:1.1em;min-height:630px;max-height:710px}
 .tabelaPrecos{margin:2% auto 10% auto;width:80%}.tabela h2{font-size:2.5em}.le{width:78%}
 .btnCardapio{padding:3% 23%;margin:0 12% 0 19%;font-size:1.3em}.slide{height:632px}
-.slide h2{font-size:2.9em;padding-top:5%}.slide p{margin-top:1%;font-size:1.3em}.sliderImagens img{border:2px #113536 solid;border-radius:10px;box-shadow:9px 9px #dadad4}
+.slide h2{font-size:2.9em;padding-top:5%}.slide p{margin-top:1%;font-size:1.3em}.sliderImagens img{width:80%;border:2px #113536 solid;border-radius:10px;box-shadow:9px 9px #dadad4}
 .rodape{height:600px}.informacoes{padding-top:10%}.informacoes h2{font-size:2.9em}
 .informacoes p{font-size:1.3em}.informacoes h3{padding-top:7%}.endereco{margin-bottom:15%}
 .contato{padding:4% 18%;font-size:1.5em}.formalidade{padding-top:40px;height:20%}
