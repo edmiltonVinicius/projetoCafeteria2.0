@@ -101,7 +101,7 @@ main.containner {
 /* SESSÃO LOCALIDADE */
 section.localidade {
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
 
 /* ARTIGO MAPA */
@@ -109,7 +109,7 @@ article.mapa {
     width: 80%;
     height: 40%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 30px;
     border: 1px #3f3e3e solid;
     border-radius: 1%;
 }
@@ -117,9 +117,9 @@ article.mapa {
 /* ARTIGO INFORMAÇÕES */
 article.informacoes {
     width: 85%;
-    height: 60%;
+    height: 80%;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 30px;
     text-align: center;
 }
 button.icone {
@@ -147,8 +147,7 @@ button.icone {
 /* SESSÃO FORMULARIO */
 section.formulario {
     width: 100%;
-    height: 670px;
-    margin-top: 5px;
+    height: 750px;
 }
 .formulario h2 {
     color: #5e3131;
@@ -166,22 +165,21 @@ form p {
     padding-left: 2%;
 }
 form label {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.3em;
-    color: #3f4242;    
+    display: none;
+
 }
 label#mensagem {
     display: block;
 }
 form input {    
-    width: 75%;
+    width: 80%;
     height: 40px;
     border-radius: 10px;
     border: 1px #cacfcf solid;
     padding: 1%;
     color: #665f5f;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 form input:focus {
     border: 3px #cacfcf solid;
@@ -194,7 +192,7 @@ form textarea {
     font-family: 'Josefin Sans', sans-serif;
     border-radius: 10px;
     border: 1px #cacfcf solid;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 form textarea:focus {
     border: 3px #cacfcf solid;
@@ -283,23 +281,30 @@ footer.rodape {
         font-size: 1.1em;
     }
 
-    /* SESSÃO FORMULARIO */
+    /* SESSÃO FORMULARIO */ 
     section.formulario {
         margin-top: 15px;
         height: 700px;
     }
+    form {
+        width: 80%;
+        margin: auto;
+    }
     .formulario h2 {
         font-size: 2.3em;
     }
-    form label {
-        font-size: 1.4em;
-    }
     form input {
+        width: 80%;
         height: 45px;
         margin-left: 8px;
     }
     form button {
+        width: 40%;
         height: 60px;
+        margin-right: 10%;
+    }
+    form textarea {
+        width: 100%;
     }
 
     /* RODAPÉ */
@@ -410,10 +415,6 @@ footer.rodape {
     }
     form p{
         margin-top: 35px;
-    }
-    form label {
-        font-size: 1.5em;
-        color: #4d5353;
     }
     form input {
         height: 55px;
