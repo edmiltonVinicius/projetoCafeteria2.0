@@ -92,7 +92,7 @@ main.conteudoPrincipal {
 /* ARTIGO MENSAGEM */
 article.mensagem {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     max-height: 860px;
     text-align: center;
 }
@@ -188,12 +188,12 @@ div.gambi {
 /* ARTIGO SLIDE */
 article.slide {
     width: 100%;
-    min-height: 520px;
-    max-height: 780px;   
+    min-height: 670px;
+    max-height: 820px;   
     text-align: center;
 }
 .slide h2 {
-    padding-top: 7%;
+    padding-top: 8%;
     font-family: 'Great Vibes', 'Arial',cursive;
     color: #c54141;
     font-size: 2.4em;
@@ -202,17 +202,17 @@ article.slide {
     color: #4b4646;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2em;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 .sliderImagens {
     width: 100%;
     min-height: 450px;
     max-height: 750px;
-    margin-top: 5%;
+    padding-top: 20px;
 }
 
 .sliderImagens img {
-    width: 95%;
+    width: 75%;
     height: 427px;
     border: 1px #113536 solid;
     border-radius: 10px;
@@ -224,7 +224,7 @@ article.slide {
 /* RODAPE */
 .rodape {
     width: 100%;
-    height: 530px;
+    height: 580px;
     background-color: black;
     text-align: center;
     color: #cac0c0;
@@ -241,12 +241,12 @@ article.slide {
 .informacoes {
     width: 100%;
     min-height: 80%;
-    padding-top: 15%;
 }
 .informacoes h2 {
     font-family: 'Great Vibes', 'Arial',cursive;
     color: #c73002;
     font-size: 2.5em;
+    padding-top: 30px;
 }
 .informacoes p {
     padding-top: 20px;
@@ -266,11 +266,11 @@ article.slide {
     margin-bottom: 12%;
 }
 .contato {
-    padding: 5% 22%;
+    padding: 5% 15%;
     border: 1px solid #ffffff;
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.3em;   
 }
 .formalidade {
     width: 100%;
