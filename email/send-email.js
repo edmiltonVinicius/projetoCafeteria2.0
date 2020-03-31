@@ -1,14 +1,11 @@
 const nodemailer = require('nodemailer')
 const emailUser = require('./email-user')
-const emailAdm = require('./email-admin')
 
 const transport = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    service: 'gmail',
     auth: {
         user: 'projetocafeteriadopaulo@gmail.com',
-        pass: process.env.PASS_MAIL
+        pass: 'atento@8890'
     }
 })
 
