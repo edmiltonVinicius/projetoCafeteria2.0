@@ -19,7 +19,7 @@ function validacaoFormulario(){
             alert('E-mail digitado inválido!')
             return false
         } else {
-            Console.log('Formulário enviado com sucesso!')
+            console.log('Formulário enviado com sucesso!')
         }
     
     if(mensagem.length < 3){
